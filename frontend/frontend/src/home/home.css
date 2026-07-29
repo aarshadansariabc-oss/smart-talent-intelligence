@@ -1,0 +1,290 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#1f2937;
+}
+
+/* ===========================
+        Navbar
+=========================== */
+
+.navbar{
+    width:100%;
+    height:80px;
+    padding:0 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#374151;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+/* Buttons */
+
+.login-btn,
+.register-btn{
+    border:none;
+    outline:none;
+    padding:10px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+    font-weight:500;
+}
+
+.login-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+}
+
+.register-btn{
+    background:#7c3aed;
+    color:white;
+}
+
+.register-btn:hover{
+    background:#6d28d9;
+}
+
+/* ===========================
+        Hero Section
+=========================== */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:50px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-left h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero-left span{
+    color:#2563eb;
+}
+
+.hero-left p{
+    font-size:18px;
+    color:#6b7280;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 35px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,.3);
+}
+
+.secondary-btn{
+    background:#7c3aed;
+    color:white;
+}
+
+.secondary-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(124,58,237,.3);
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:600px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ===========================
+        Features
+=========================== */
+
+.features{
+    width:100%;
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#6b7280;
+    line-height:1.7;
+}
+
+/* ===========================
+        Footer
+=========================== */
+
+.footer{
+    margin-top:80px;
+    padding:40px;
+    text-align:center;
+    background:#111827;
+    color:white;
+}
+
+.footer h3{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.footer p{
+    color:#d1d5db;
+    margin-top:8px;
+}
+
+/* ===========================
+        Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-left h1{
+    font-size:40px;
+}
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+}
+
+.nav-links{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-left h1{
+    font-size:32px;
+}
+
+.hero-left p{
+    font-size:16px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.login-btn,
+.register-btn,
+.primary-btn,
+.secondary-btn{
+    width:150px;
+}
+
+.features{
+    padding:50px 20px;
+}
+
+}
